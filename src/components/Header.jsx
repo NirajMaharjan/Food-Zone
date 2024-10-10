@@ -62,7 +62,7 @@ const Head = styled.header`
     border-radius: 5px;
     border: 1px solid #ff0909;
     background-color: transparent;
-    color:white;
+    
   }
 
   input:focus {
@@ -70,7 +70,7 @@ const Head = styled.header`
     background-color: #ffffff;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 750px) {
     padding: 0;
     width: 100vw;
     margin:auto;
