@@ -12,7 +12,10 @@ const Card = (props) => {
           <p className="title">{props.title}</p>
           <p className="description">{props.description}</p>
         </div>
-        <Button text={props.price}/>
+        <div className="price">
+        <Button text={`$${props.price}`}/>
+
+        </div>
       </div>
     </Cards>
   );
@@ -58,5 +61,18 @@ text-align: left;
     display: flex;
     flex-direction: column;
     gap: 8px;
+  }
+
+  .price{
+    display: flex;
+    justify-content: end;
+  }
+
+  .description{
+font-size: 12px;
+font-weight: 400;
+line-height: 14.52px;
+text-align: left;
+
   }
 `;
